@@ -3,7 +3,7 @@ Responsive Table JS
 
 Responsive Tables JS is a simple and fast method for making any table responsive
 
-Usuage
+Usage
 ------
 
 * jQuery is required - tested with 2.x (should work with previous versions too)
