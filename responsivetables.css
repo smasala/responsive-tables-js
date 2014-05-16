@@ -29,4 +29,9 @@ table.responsive span[data-type="responsive"]{
 	table.responsive th{
 		display:none;
 	}
+	
+	table.responsive td:before{
+		position: absolute;
+		white-space: nowrap;
+	}
 }
