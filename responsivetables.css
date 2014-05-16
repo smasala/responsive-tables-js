@@ -24,7 +24,8 @@ table.responsive span[data-type="responsive"]{
 	
 	table.responsive td{
 		border: none;
-		position: relative;
+		min-width:100%;
+		width:100%;
 	}
 	
 	table.responsive th{
