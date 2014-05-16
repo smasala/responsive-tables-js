@@ -42,7 +42,12 @@ Contribution
 
 Sure! Just send my your pull requests :)
 
+[Demo]
+----
+
 Licence
 -------
 
 MIT
+
+[Demo]:demo.html
