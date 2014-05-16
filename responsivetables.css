@@ -9,9 +9,19 @@ table.responsive span[data-type="responsive"]{
 		color:#a8a8a8;
 	}
 	
-	table, thead, tbody, th, td, tr { 
-		box-sizing: border-box;
+	table.responsive, table.responsive thead, table.responsive tbody, table.responsive th, table.responsive td, table.responsive tr { 
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
 		display: block; 
+	}
+	
+	table.responsive tr { 
+		border: 1px solid #ccc; 
+	}
+	
+	table.responsive td{
+		border: none;
 	}
 	
 	table.responsive th{
