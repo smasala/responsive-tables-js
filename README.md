@@ -7,13 +7,14 @@ Usage
 ------
 
 * jQuery is required - tested with 2.x (should work with previous versions too)
-* Just insert the js script and add the class **responsive** to your table.
+* Just insert the js script, css stylesheet and add the class **responsive** to your table.
 * The table must have **th** tags to work
 
 **Example:**
 
 Include:
 
+    <link rel="stylesheet" href="responsiveimages.css" />
     <script src="responsiveimages.js"></script>
  
 Table:
