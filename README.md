@@ -9,6 +9,7 @@ Usage
 * jQuery is required - tested with 2.x (should work with previous versions too)
 * Just insert the js script, css stylesheet and add the class **responsive** to your table.
 * The table must have **th** tags to work
+* For chrome : <!DOCTYPE html> is required!
 
 **Example:**
 
