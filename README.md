@@ -51,4 +51,4 @@ Licence
 
 MIT
 
-[Demo]:demo.html
+[Demo]:http://smasala.github.io/responsive-tables-js/demo.html
