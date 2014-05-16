@@ -6,11 +6,11 @@ Responsive Tables JS is a simple and fast method for making any table responsive
 Usuage
 ------
 
-Just insert the js script and add the class '''responsive''' to your table.
+Just insert the js script and add the class **responsive** to your table.
 
-The table must have '''th''' tags to work
+The table must have **th** tags to work
 
-<table class="responsive">
+    <table class="responsive">
     <tr >
         <th>
             Title 1
@@ -27,7 +27,7 @@ The table must have '''th''' tags to work
             Row 1
         </td>
     </tr>
-</table>
+    </table>
 
 Licence
 -------
