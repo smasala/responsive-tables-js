@@ -22,6 +22,8 @@ table.responsive span[data-type="responsive"]{
 	
 	table.responsive td{
 		border: none;
+		position: relative;
+		border-bottom: 1px solid #eee;
 	}
 	
 	table.responsive th{
