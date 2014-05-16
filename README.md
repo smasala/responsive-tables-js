@@ -12,6 +12,9 @@ Usage
 
 Example:
 
+    <script src="responsiveimages.js"></script>
+
+
     <table class="responsive">
     <tr >
         <th>
