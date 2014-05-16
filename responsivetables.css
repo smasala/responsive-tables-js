@@ -17,21 +17,18 @@ table.responsive span[data-type="responsive"]{
 	}
 	
 	table.responsive tr { 
-		border: 1px solid #ccc; 
+		border: 1px solid #ccc;
+		width: 100%;
+		display: inline-block;		
 	}
 	
 	table.responsive td{
 		border: none;
-		position: relative;
-		border-bottom: 1px solid #eee;
+		width:100%;
 	}
 	
 	table.responsive th{
 		display:none;
 	}
 	
-	table.responsive td:before{
-		position: absolute;
-		white-space: nowrap;
-	}
 }
