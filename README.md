@@ -6,9 +6,11 @@ Responsive Tables JS is a simple and fast method for making any table responsive
 Usuage
 ------
 
-Just insert the js script and add the class **responsive** to your table.
+* jQuery is required - tested with 2.x (should work with previous versions too)
+* Just insert the js script and add the class **responsive** to your table.
+* The table must have **th** tags to work
 
-The table must have **th** tags to work
+Example:
 
     <table class="responsive">
     <tr >
@@ -28,6 +30,11 @@ The table must have **th** tags to work
         </td>
     </tr>
     </table>
+
+Contribution
+------------
+
+Sure! Just send my your pull requests :)
 
 Licence
 -------
