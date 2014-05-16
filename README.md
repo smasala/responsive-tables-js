@@ -10,7 +10,7 @@ Usage
 * Just insert the js script and add the class **responsive** to your table.
 * The table must have **th** tags to work
 
-Example:
+**Example:**
 
 Include:
 
