@@ -4,7 +4,7 @@ table.responsive span[data-type="responsive"]{
 
 @media only screen and (max-width:768px){
 	table.responsive span[data-type="responsive"]{
-		display:inline-block;
+		float:left;
 		width:45%;
 		color:#a8a8a8;
 	}
@@ -19,13 +19,16 @@ table.responsive span[data-type="responsive"]{
 	table.responsive tr { 
 		border: 1px solid #ccc;
 		width: 100%;
-		display: inline-block;		
 	}
 	
 	table.responsive td{
 		border: none;
 		min-width:100%;
 		width:100%;
+	}
+	
+	table.responsive td:after{
+		clear:both;
 	}
 	
 	table.responsive th{
