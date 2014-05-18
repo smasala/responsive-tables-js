@@ -42,7 +42,7 @@ Table:
 Contribution
 ------------
 
-Sure! Just send my your pull requests :)
+Sure! Just send me your pull requests :)
 
 [Demo]
 ----
