@@ -7,10 +7,10 @@ Browser Support
 ---------------
 
 All modern browsers. Tested in:
-** FF
-** Chrome
-** IOS Safari
-** IE9+ (see usage)
+* FF
+* Chrome
+* IOS Safari
+* IE9+ (see usage)
 
 Usage
 ------
