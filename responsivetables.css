@@ -16,6 +16,12 @@ table.responsive span[data-type="responsive"]{
 		display: block; 
 	}
 	
+	html.ie9 table.responsive, html.ie9 table.responsive thead, html.ie9 table.responsive tbody, html.ie9 table.responsive th, html.ie9 table.responsive td, html.ie9 table.responsive tr{
+		float: left;
+		clear: both;
+		width: 100%
+	}
+	
 	table.responsive tr { 
 		border: 1px solid #ccc;
 	}
