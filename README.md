@@ -3,13 +3,23 @@ Responsive Table JS
 
 Responsive Tables JS is a simple and fast method for making any table responsive
 
+Browser Support
+---------------
+
+All modern browsers. Tested in:
+** FF
+** Chrome
+** IOS Safari
+** IE9+ (see usage)
+
 Usage
 ------
 
 * jQuery is required - tested with 2.x (should work with previous versions too)
 * Just insert the js script, css stylesheet and add the class **responsive** to your table.
 * The table must have **th** tags to work
-* For chrome : <!DOCTYPE html> is required!
+* For chrome/ios: <!DOCTYPE html> is required!
+* For IE9: please make sure that the html tag has the class ie9 (below for instructions)
 
 **Example:**
 
@@ -38,6 +48,15 @@ Table:
         </td>
     </tr>
     </table>
+
+IE9 CSS Class
+
+    <!--[if IE 9 ]>
+        <html class="ie9">
+    <![endif]-->
+    <!--[if !IE]>-->
+        <html>
+    <!--<![endif]-->
 
 Contribution
 ------------
