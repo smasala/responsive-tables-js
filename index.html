@@ -37,12 +37,24 @@
 <p>Responsive Tables JS is a simple and fast method for making any table responsive</p>
 
 <h2>
+<a name="browser-support" class="anchor" href="#browser-support"><span class="octicon octicon-link"></span></a>Browser Support</h2>
+
+<p>All modern browsers. Tested in:</p>
+
+<ul>
+<li>FF</li>
+<li>Chrome</li>
+<li>IOS Safari</li>
+<li>IE9+ (see usage)</li>
+</ul><h2>
 <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
 
 <ul>
 <li>jQuery is required - tested with 2.x (should work with previous versions too)</li>
 <li>Just insert the js script, css stylesheet and add the class <strong>responsive</strong> to your table.</li>
 <li>The table must have <strong>th</strong> tags to work</li>
+<li>For chrome/ios: &lt;!DOCTYPE html&gt; is required!</li>
+<li>For IE9: please make sure that the html tag has the class ie9 (below for instructions)</li>
 </ul><p><strong>Example:</strong></p>
 
 <p>Include:</p>
@@ -73,10 +85,20 @@
 &lt;/table&gt;
 </code></pre>
 
+<p>IE9 CSS Class</p>
+
+<pre><code>&lt;!--[if IE 9 ]&gt;
+    &lt;html class="ie9"&gt;
+&lt;![endif]--&gt;
+&lt;!--[if !IE]&gt;--&gt;
+    &lt;html&gt;
+&lt;!--&lt;![endif]--&gt;
+</code></pre>
+
 <h2>
 <a name="contribution" class="anchor" href="#contribution"><span class="octicon octicon-link"></span></a>Contribution</h2>
 
-<p>Sure! Just send my your pull requests :)</p>
+<p>Sure! Just send me your pull requests :)</p>
 
 <h2>
 <a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a><a href="http://smasala.github.io/responsive-tables-js/demo.html">Demo</a>
