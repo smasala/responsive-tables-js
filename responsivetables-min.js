@@ -1,5 +1,8 @@
 /*
 * Author: Steven Masala
+* Twitter: @StevenMasala
+* Github: https://github.com/smasala/responsive-tables-js
+* Licence: MIT https://tldrlegal.com/license/mit-license
 * Responsive Tables
 * version: 0.1
 */
