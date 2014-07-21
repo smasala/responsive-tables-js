@@ -16,6 +16,7 @@ table.responsive span[data-type="responsive"]{
 		display:inline-block;
 		width:45%;
 		color:#a8a8a8;
+		vertical-align:top;
 	}
 	
 	table.responsive, table.responsive thead, table.responsive tbody, table.responsive th, table.responsive td, table.responsive tr { 
