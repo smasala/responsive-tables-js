@@ -1,12 +1,11 @@
-/*
-* Author: Steven Masala
-* Twitter: @StevenMasala
+/*!
+* @author Steven Masala [me@smasala.com]
 * Github: https://github.com/smasala/responsive-tables-js
-* Licence: MIT https://tldrlegal.com/license/mit-license
+* @license MIT https://tldrlegal.com/license/mit-license
 * Responsive Tables
-* version: 0.1
+* @version 0.1
 *
-* usage: give any table you want to work responsively the CSS class "responsive".
+* usage: give any table you want to work responsively, the CSS class "responsive".
 */
 
 window.responsiveTables = new (function(window, document, $){
