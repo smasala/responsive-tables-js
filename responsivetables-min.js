@@ -8,4 +8,4 @@
 * usage: give any table you want to work responsively, the CSS class "responsive".
 */
 		
-window.responsiveTables=new function(e,t,n){var r=this;r.version="0.1";r.titleTpl=function(e){return"<span data-type='responsive'>"+e+"</span>"};r.update=function(){var e=n("table.responsive");if(e.length>0){var t,i,s,o,u,a;for(var f=0,l=e.length;f<l;f++){t=n(e[f]);i=n(t).find("th");o=n(t).find("tr");for(var c=0,h=o.length;c<h;c++){tds=n(o[c]).find("td");for(var p=0,d=tds.length;p<d;p++){s=i[p];a=s.textContent||a.innerText;u=n(tds[p]).prepend(r.titleTpl(a))}}}}};n(t).ready(r.update)}(this,this.document,jQuery)
+window.responsiveTables=new function(e,t,n){var r=this;r.version="1.0.0";r.titleTpl=function(e){return"<span data-type='responsive'>"+e+"</span>"};r.update=function(e){var e=typeof e=="string"?"#"+e:"",t=n("table"+e+".responsive");if(t.length>0){var i,s,o,u,a,f;for(var l=0,c=t.length;l<c;l++){i=n(t[l]);s=n(i).find("th");u=n(i).find("tr");for(var h=0,p=u.length;h<p;h++){tds=n(u[h]).find("td");for(var d=0,v=tds.length;d<v;d++){o=s[d];f=o.textContent||f.innerText;a=n(tds[d]).prepend(r.titleTpl(f))}}}}};n(t).ready(r.update)}(this,this.document,jQuery)
