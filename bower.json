@@ -1,5 +1,5 @@
 {
-	"name": "responsive-tables",
+	"name": "responsive-tables-js",
 	"description": "JavaScript solution for supporting responsive tables",
 	"main": "responsivetables.js",
 	"ignore": "",
