@@ -42,7 +42,6 @@
 		 * @param id {String} optional - pass if you wish to update a specific table
 		 */
 		me.update = function(id){
-			console.info("id", id)
 			var id = typeof id == "string" ? "#" + id : "",
 				tables = $("table"+id+".responsive");
 			
