@@ -3,16 +3,35 @@
 * Github: https://github.com/smasala/responsive-tables-js
 * @license MIT https://tldrlegal.com/license/mit-license
 * Responsive Tables
-* @version 1.0.0
+* @version 1.0.2
 *
 * usage: give any table you want to work responsively, the CSS class "responsive".
 */
 
-window.responsiveTables = new (function(window, document, $){
+(function(root, factory) {
+	
+  "use strict";
+
+  if (typeof define === "function" && define.amd) {
+    define(["jquery"], function($) {
+    	return factory(root, root.document, $);
+    });
+  } else {
+	  return factory(root, root.document, root.jQuery);
+  }
+
+})(this, function(window, document, $) {
+
+	if(window.responsiveTables){
+		console.error("responsive-tables-js is already defined globally", window.responsiveTables);
+		return;
+	}
+	
+	var responsiveTables = new function(){
 		
 		var me = this;
 		
-		me.version = "1.0.0";
+		me.version = "1.0.2";
 		
 		me.titleTpl = function(data){
 			return "<span data-type='responsive'>" + data + "</span>";
@@ -23,6 +42,7 @@ window.responsiveTables = new (function(window, document, $){
 		 * @param id {String} optional - pass if you wish to update a specific table
 		 */
 		me.update = function(id){
+			console.info("id", id)
 			var id = typeof id == "string" ? "#" + id : "",
 				tables = $("table"+id+".responsive");
 			
@@ -55,4 +75,14 @@ window.responsiveTables = new (function(window, document, $){
 		//init
 		$(document).ready(me.update);
 		
-})(this, this.document, jQuery);
+	}
+	
+	//define globally
+	window.responsiveTables = responsiveTables;
+	return responsiveTables;
+	
+});
+
+
+
+

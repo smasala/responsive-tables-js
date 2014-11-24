@@ -1,0 +1,44 @@
+/*!
+* @author Steven Masala [me@smasala.com]
+* Github: https://github.com/smasala/responsive-tables-js
+* @license: MIT https://tldrlegal.com/license/mit-license
+* Responsive Tables
+* @version 1.0.0
+*/
+table.responsive span[data-type="responsive"]{
+	display:none;
+}
+@media only screen and (max-width:768px){
+	table.responsive span[data-type="responsive"]{
+		display:inline-block;
+		width:45%;
+		color:#a8a8a8;
+		vertical-align:top;
+	}
+	
+	table.responsive, table.responsive thead, table.responsive tbody, table.responsive th, table.responsive td, table.responsive tr { 
+		-webkit-box-sizing: border-box; 
+		-moz-box-sizing: border-box;    
+		box-sizing: border-box;         
+		display: block; 
+	}
+	
+	html.ie9 table.responsive, html.ie9 table.responsive thead, html.ie9 table.responsive tbody, html.ie9 table.responsive th, html.ie9 table.responsive td, html.ie9 table.responsive tr{
+		float: left;
+		clear: both;
+		width: 100%
+	}
+	
+	table.responsive tr { 
+		border: 1px solid #ccc;
+	}
+	
+	table.responsive td{
+		border: none;
+	}
+	
+	table.responsive th{
+		display:none;
+	}
+	
+}
