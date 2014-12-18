@@ -3,7 +3,7 @@
 * Github: https://github.com/smasala/responsive-tables-js
 * @license MIT https://tldrlegal.com/license/mit-license
 * Responsive Tables
-* @version 1.0.2
+* @version 1.0.3
 *
 * usage: give any table you want to work responsively, the CSS class "responsive".
 */
@@ -31,7 +31,7 @@
 		
 		var me = this;
 		
-		me.version = "1.0.2";
+		me.version = "1.0.3";
 		
 		me.titleTpl = function(data){
 			return "<span data-type='responsive'>" + data + "</span>";
@@ -43,11 +43,11 @@
 		 */
 		me.update = function(id){
 			var id = typeof id == "string" ? "#" + id : "",
-				tables = $("table"+id+".responsive");
+				tables = $("table"+id+".responsive"),
+				table, ths, th, trs, td, text; //for later
 			
 			if(tables.length > 0){
 				
-				var table, ths, th, trs, td, text;
 				for(var i = 0, l = tables.length; i<l; i++){
 					//iterate over each table
 					table = $(tables[i]);
