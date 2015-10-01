@@ -1,0 +1,11 @@
+{
+	"undef": true,
+	"unused": true,
+	"strict": true,
+	"eqeqeq": true,
+	"camelcase": true,
+	"latedef": false,
+	"curly": true,
+	"jquery": true,
+	"predef": ["expect", "alert", "beforeEach", "afterEach", "jasmin", "describe", "it", "requirejs", "document", "window", "console", "define", "require", "$", "jQuery"]
+}

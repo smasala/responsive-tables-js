@@ -1,3 +1,9 @@
+v1.0.4
+-------------------
+* add grunt
+* replace "undefined" with empty string is no header is provided
+* jscs and jshint it
+
 v1.0.3
 -------------------
 * hoist variables to top position

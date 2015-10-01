@@ -1,0 +1,28 @@
+{
+    "preset": "jquery",
+    "requireSpacesInsideParentheses": {
+    	"all": true,
+    	"except": [ "{", "}", "function"]
+    },
+    "requireCapitalizedComments": null,
+    "validateLineBreaks": null,
+    "requirePaddingNewLinesBeforeLineComments": null,
+    "disallowTrailingWhitespace": "ignoreEmptyLines",
+    "requireSpacesInsideBrackets": {
+	    "allExcept": [ "[", "]", "{", "}" ]
+	},
+	"validateQuoteMarks": { "mark": "\"", "escape": true },
+	"requireSpaceBeforeObjectValues": true,
+	"disallowSpaceAfterObjectKeys": true,
+    "maximumLineLength": null,
+    "requireDotNotation": { "allExcept": [ "keywords" ] },
+    "requireCamelCaseOrUpperCaseIdentifiers": null,
+    "requireSpaceBeforeKeywords": [
+        "else",
+        "catch"
+    ],
+	"excludeFiles": [
+		"**/node_modules/**",
+		"**/bower_components/**"
+	]
+}
