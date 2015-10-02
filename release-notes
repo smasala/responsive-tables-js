@@ -1,3 +1,11 @@
+v1.0.5
+-------------------
+* rename function update to init
+* remove auto loading on document ready - call window.responsiveTables.init() when desired
+* new properties for init function
+    ** selector: pass to override default selector - "table.reponsive"
+    ** force:    set as true to re-init tables already initialised.
+
 v1.0.4
 -------------------
 * add grunt

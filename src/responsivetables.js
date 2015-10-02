@@ -3,7 +3,7 @@
  * Github: https://github.com/smasala/responsive-tables-js
  * @license MIT https://tldrlegal.com/license/mit-license
  * Responsive Tables
- * @version 0.1.4
+ * @version 0.1.5
  *
  * usage: give any table you want to work responsively, the CSS class "responsive".
  */
@@ -29,30 +29,35 @@
 
     var responsiveTables = {
 
-        version: "0.1.4",
+        version: "0.1.5",
 
         titleTpl: function( data ) {
             return "<span data-type='responsive'>" + data + "</span>";
         },
 
         /**
-         * @method update
-         * @param id {String} optional - pass if you wish to update a specific table
+         * @method init
+         * @param selector {String} optional - pass if you wish to update tables that do not meet the selector: table.responsive
+         * @param force {Boolean} [default=false] - optional - set true to reiterate over previous converted tables
          */
-        update: function( id ) {
+        init: function( selector, force ) {
             var me = this,
-                id1 = typeof id === "string" ? "#" + id : "",
-                tables = $( "table" + id1 + ".responsive" ),
-                table, ths, th, trs, tds, td, text; //for later
+                tables = $( selector ? selector : "table.responsive" ),
+                table, ths, th, trs, tds, td, text, it; //for later
 
             if ( tables.length > 0 ) {
 
                 for ( var i = 0, l = tables.length; i < l; i++ ) {
                     //iterate over each table
                     table = $( tables[ i ] );
+                    if ( table.attr( "data-type" ) && !force ) {
+                        //ignore this table
+                        continue;
+                    }
+                    table.attr( "data-type", "responsive" );
                     //get all the table header for the give table
-                    ths = $( table ).find( "th" );
-                    trs = $( table ).find( "tr" );
+                    ths = table.find( "th" );
+                    trs = table.find( "tr" );
                     //iterate over all trs
                     for ( var ii = 0, ll = trs.length; ii < ll; ii++ ) {
                         //find tds and iterate
@@ -60,10 +65,14 @@
                         for ( var iii = 0, lll = tds.length; iii < lll; iii++ ) {
                             //for each td - find the correct heading
                             th = ths[ iii ];
+                            it = $( tds[ iii ] );
                             //get the text content
                             text = th.textContent || text.innerText || "";
+                            if ( force ) {
+                                it.find( "span[data-type='responsive']" ).remove();
+                            }
                             //prepend td with the correct template
-                            td = $( tds[ iii ] ).prepend( me.titleTpl( text ) );
+                            td = it.prepend( me.titleTpl( text ) );
                         }
                     }
                 }
@@ -74,9 +83,5 @@
     
     //define globally
     window.responsiveTables = responsiveTables;
-    //init
-    $( document ).ready( function() {
-        window.responsiveTables.update();
-    } );
     return responsiveTables;
 } );
