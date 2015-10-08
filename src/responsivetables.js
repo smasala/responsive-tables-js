@@ -57,7 +57,7 @@
                     table.attr( "data-type", "responsive" );
                     //get all the table header for the give table
                     trs = table.find( "> thead > tr, > tbody > tr, > tr" );
-                    ths = table.find( "> th", trs );
+                    ths = trs.find( "> th" );
                     //iterate over all trs
                     for ( var ii = 0, ll = trs.length; ii < ll; ii++ ) {
                         //find tds and iterate
