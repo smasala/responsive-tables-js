@@ -3,7 +3,7 @@
  * Github: https://github.com/smasala/responsive-tables-js
  * @license MIT https://tldrlegal.com/license/mit-license
  * Responsive Tables
- * @version 0.1.6
+ * @version 1.0.6
  *
  * usage: give any table you want to work responsively, the CSS class "responsive".
  */
@@ -29,7 +29,7 @@
 
     var responsiveTables = {
 
-        version: "0.1.6",
+        version: "1.0.6",
 
         titleTpl: function( data ) {
             return "<span data-type='responsive'>" + data + "</span>";
