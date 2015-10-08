@@ -1,3 +1,7 @@
+v1.0.6
+-------------------
+* fix where the selector searched into child tables
+
 v1.0.5
 -------------------
 * rename function update to init

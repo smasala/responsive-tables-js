@@ -3,7 +3,7 @@
  * Github: https://github.com/smasala/responsive-tables-js
  * @license MIT https://tldrlegal.com/license/mit-license
  * Responsive Tables
- * @version 0.1.5
+ * @version 0.1.6
  *
  * usage: give any table you want to work responsively, the CSS class "responsive".
  */
@@ -29,7 +29,7 @@
 
     var responsiveTables = {
 
-        version: "0.1.5",
+        version: "0.1.6",
 
         titleTpl: function( data ) {
             return "<span data-type='responsive'>" + data + "</span>";
@@ -56,12 +56,12 @@
                     }
                     table.attr( "data-type", "responsive" );
                     //get all the table header for the give table
-                    ths = table.find( "th" );
-                    trs = table.find( "tr" );
+                    trs = table.find( "> thead > tr, > tbody > tr, > tr" );
+                    ths = table.find( "> th", trs );
                     //iterate over all trs
                     for ( var ii = 0, ll = trs.length; ii < ll; ii++ ) {
                         //find tds and iterate
-                        tds = $( trs[ ii ] ).find( "td" );
+                        tds = $( trs[ ii ] ).find( "> td" );
                         for ( var iii = 0, lll = tds.length; iii < lll; iii++ ) {
                             //for each td - find the correct heading
                             th = ths[ iii ];
