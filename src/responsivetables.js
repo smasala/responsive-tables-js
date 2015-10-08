@@ -67,7 +67,7 @@
                             th = ths[ iii ];
                             it = $( tds[ iii ] );
                             //get the text content
-                            text = th.textContent || text.innerText || "";
+                            text = th.textContent || th.innerText || "";
                             if ( force ) {
                                 it.find( "span[data-type='responsive']" ).remove();
                             }
