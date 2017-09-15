@@ -25,8 +25,8 @@ Usage
 
 Include:
 
-    <link rel="stylesheet" href="responsiveimages.css" />
-    <script src="responsiveimages.js"></script>
+    <link rel="stylesheet" href="responsivetables.css" />
+    <script src="responsivetables.js"></script>
  
 Table:
 
