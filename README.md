@@ -58,6 +58,14 @@ IE9 CSS Class
         <html>
     <!--<![endif]-->
 
+Init tables
+    
+    $( document ).ready( function() {
+        window.responsiveTables.init();
+        // or
+        window.responsiveTables.init("{some-jquery-selector}");
+    } );
+
 Contribution
 ------------
 
